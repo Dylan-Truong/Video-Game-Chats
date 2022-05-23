@@ -3,12 +3,12 @@
 /* Team     : Dark Overlords   */
 /* File     : style.css        */
 /* Date     : 05/13/2022       */
-/* Modified : 05/15/2022       */
+/* Modified : 05/19/2022       */
 /* --------------------------- */
 /* Declare constants */
 * {
-  --background: linear-gradient(to right, #133461, #191f2e);
-  --hero: linear-gradient(to left, #133461, #191f2e);
+  --background: linear-gradient(to right, #145287, #412748);
+  --back: linear-gradient(to left, #145287, #412748);
   --body: #75828C;
   --dark: #35455d;
   --shadow: #7b8f9c;
@@ -18,7 +18,7 @@
   --btn-del: #e93535;
   --btn-del-over: #e14c4c;
   --btn-create: #202b4f;
-  --over: #daf50f;
+  --over: #00fff2;
   --msg-odd: #ced2c2;
   --msg-even: #bfd1df;
   --border-radius: .9rem;
@@ -53,7 +53,7 @@ a:hover {
   text-decoration: none;
 }
 .link {
-  font-family: 'Graduate';
+  font-family: 'Play';
   color: var(--btn-ok);
   padding-right: 0;
   padding-top: 1%;
@@ -64,10 +64,10 @@ a:hover {
 }
 /* Style titles */
 h3 {
-  font-family: 'Graduate';
+  font-family: 'Play';
 }
 .app-title {
-  font-family: 'Graduate';
+  font-family: 'Play';
   font-size: 40px;
   font-weight: bolder;
   color: var(--clear);
@@ -75,7 +75,7 @@ h3 {
   margin-bottom: 1%;
 }
 .section-title {
-  font-family: 'Graduate';
+  font-family: 'Play';
   color: var(--clear);
   font-weight: bolder;
 }
@@ -89,7 +89,7 @@ h3 {
 textarea {
   height: 100px;
 }
-input, textarea {
+input, textarea, select {
   font-family: 'Michroma', sans-serif;
   color: var(--body);
   margin-right: 10px;
@@ -99,15 +99,19 @@ input, textarea {
 }
 /* Style hero */
 .hero {
-  font-family: 'Graduate';
+  font-family: 'Play';
   padding: 1% 3%;
   background-color: var(--dark);
-  background-image: url("../images/controller.jpg");
+  background-image: url("../images/Gamerz-Connect.png");
   background-position: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 /* Style buttons */
 button {
-  font-family: 'Graduate';
+  font-family: 'Play';
   background-color: var(--btn-ok);
   border: 0;
   padding: 1%;
@@ -168,12 +172,12 @@ button:hover {
 }
 .card-header {
   color: var(--clear);
-  background: var(--hero);
+  background: var(--back);
   padding: 1%;
   text-align: center;
 }
 .card-title {
-  font-family: 'Graduate';
+  font-family: 'Play';
   font-weight: bolder;
   color: var(--body);
   margin-top: 15px;
@@ -206,11 +210,11 @@ form label {
   font-family: 'Press Start 2P';
   width: 100%;
   font-size: 115%;
-  background: var(--hero);
+  background: var(--back);
   box-shadow: 0px 0px 10px var(--shadow);
 }
 .chat-dash:hover {
-  background: var(--hero);
+  background: var(--back);
   box-shadow: 0px 0px 10px var(--over);
 }
 .text-message {
@@ -235,7 +239,7 @@ form label {
   text-align: end;
 }
 .bg-chat {
-  background: var(--hero);
+  background: var(--back);
 }
 style {
   font-size: larger;
